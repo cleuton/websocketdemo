@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Bem vindo a #{title} 
+  | Meu id: #{uuid}
+  input(type="text",id="textomsg")
+  input(type="button",id="btnsend",value="Enviar")
+  div(id="mensagens")
+   | #{msg}
